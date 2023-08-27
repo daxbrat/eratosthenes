@@ -4,7 +4,10 @@
 using namespace std;
 
 int main() {
-    const int limit = 100;
+    int limit_entry{};
+    cout << "Enter max number to find primes: ";
+    cin >> limit_entry;
+    const int limit = limit_entry;
     vector<bool> isPrime(limit + 1, true);
 
     isPrime[0] = isPrime[1] = false;
